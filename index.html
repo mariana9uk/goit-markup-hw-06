@@ -301,6 +301,16 @@
 							</svg></a></li>
 				</ul>
 			</div>
+			<div>
+				<p class="subscribe-header">Subscribe</p>
+				<form name="subscribe-form">
+					<input type="email" name="email" placeholder="E-mail" class="input-subscribe">
+					<button type="submit" class="button subscribe-btn"><span class="btn-group"> Subscribe <svg width="24px" height="20px" class="send-icon">
+						<use href="./images/icons.svg#icon-send"></use>
+					</svg></span> </button>
+				</form>
+
+			</div>
 		</div>
 	</footer>
 	<div class="backdrop is-hidden" data-modal>
@@ -308,6 +318,55 @@
 			<button type="button" class="modal-close" data-modal-close><svg width="8px" height="8px" class="close-icon">
 					<use href="./images/icons.svg#icon-close"></use>
 				</svg></button>
+
+			<form name="contacts">
+				<p class="form-h">Leave your contacts and we will call you back</p>
+				<div class="form-group">
+					<label for="name" class="form-label">Name</label>
+					<div class="input-icon-group">
+						<input type="text" id="name" name="name" class="form-input">
+						<svg width="18px" height="18px" class="input-icon">
+							<use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="tell" class="form-label">Phone</label>
+					<div class="input-icon-group">
+						<input type="tel" id="tell" name="tell" class="form-input">
+						<svg width="18px" height="18px" class="input-icon">
+							<use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="form-label">Email</label>
+					<div class="input-icon-group">
+						<input type="email" id="email" name="email" class="form-input">
+						<svg width="18px" height="18px" class="input-icon">
+							<use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="comment" class="form-label">Comment</label>
+
+					<textarea id="comment" name="comment" placeholder="Text input"
+						class="form-input text-area" rows="5"></textarea>
+				</div>
+
+				<div>
+
+					<input type="checkbox" name="check" id="check" class="form-checkbox visually-hidden">
+
+					<label for="check" class="form-label-check">
+						<span><svg width="10px" height="8px" class="form-checkbox-icon">
+								<use href="./images/icons.svg#icon-vector"></use>
+							</svg></span>I accept the terms and conditions of the<a href=""> Privacy Policy</a>
+					</label>
+				</div>
+				<button type="submit" class="button submit-btn">Send</button>
+			</form>
 		</div>
 	</div>
 	<script src="./js/modal.js"></script>
